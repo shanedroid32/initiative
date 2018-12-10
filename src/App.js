@@ -38,9 +38,11 @@ class App extends Component {
       <Subscribe to={[AppContainer]}>
         {appContainer => (
           <div className="App container mx-auto">
-            <h1 className="text-5xl text-white pt-4">
-              <i className="fab fa-d-and-d text-red font-normal" /> Initiative Tracker
-            </h1>
+            <header className="flex justify-center">
+              <h1 className="text-5xl text-white pt-4">
+                <i className="fab fa-d-and-d text-red font-normal" /> Initiative Tracker
+              </h1>
+            </header>
             <div className="flex content-center flex-wrap">
               <div className="w-full bg-grey-light mb-4 mt-4 rounded-sm p-4">
                 <div>
@@ -116,6 +118,9 @@ class App extends Component {
                     Add Character
                   </button>
                 </div>
+                <div className="mt-4 text-grey-dark">
+            <p className="text-center">This application is still very much a work-in-progress. If you find a bug or have a feature request, you can click <a href="https://github.com/shanedroid32/initiative/issues/new">here</a> to submit an issue on Github. Or holler at me on <a href="https://twitter.com/shanedroid">Twitter.</a></p>
+            </div>
               </div>
             </div>
             <div>
@@ -136,12 +141,12 @@ class App extends Component {
                       </div>
                       <div className="float-right inline-flex">
                         <button
-                        className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded-l"
+                          className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded-l"
                           onClick={() => appContainer.increaseActorHealth(index)}>
                           +
                         </button>
                         <button
-                        className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded-r"
+                          className="bg-grey-light hover:bg-grey text-grey-darkest font-bold py-2 px-4 rounded-r"
                           onClick={() => appContainer.decreaseActorHealth(index)}>
                           -
                         </button>
@@ -168,6 +173,14 @@ class App extends Component {
                 )
               )}
             </div>
+            <footer className="flex justify-center mt-8">
+              <a className="text-white hover:text-red no-underline" href="https://github.com/shanedroid32/initiative">
+                <i className="fab fa-github" /> Github
+              </a>
+              <a className="ml-4 text-white hover:text-red no-underline" href="https://twitter.com/shanedroid">
+              <i className="fab fa-twitter"></i> Twitter
+              </a>
+            </footer>
           </div>
         )}
       </Subscribe>

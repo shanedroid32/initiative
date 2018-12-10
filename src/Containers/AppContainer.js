@@ -27,19 +27,19 @@ export default class AppContainer extends Container {
 
   currentActorAC = armorClass => {
     this.setState({
-      currentActor: { ...this.state.currentActor, armorClass: armorClass }
+      currentActor: { ...this.state.currentActor, armorClass: parseInt(armorClass) }
     })
   }
 
   currentActorHP = hitPoints => {
     this.setState({
-      currentActor: { ...this.state.currentActor, hitPoints: hitPoints }
+      currentActor: { ...this.state.currentActor, hitPoints: parseInt(hitPoints) }
     })
   }
 
   currentActorInitiative = initiative => {
     this.setState({
-      currentActor: { ...this.state.currentActor, initiative: initiative }
+      currentActor: { ...this.state.currentActor, initiative: parseInt(initiative) }
     })
   }
 
