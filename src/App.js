@@ -119,8 +119,14 @@ class App extends Component {
                   </button>
                 </div>
                 <div className="mt-4 text-grey-dark">
-            <p className="text-center">This application is still very much a work-in-progress. If you find a bug or have a feature request, you can click <a href="https://github.com/shanedroid32/initiative/issues/new">here</a> to submit an issue on Github. Or holler at me on <a href="https://twitter.com/shanedroid">Twitter.</a></p>
-            </div>
+                  <p className="text-center">
+                    This application is still very much a work-in-progress. If you find a bug or
+                    have a feature request, you can click{' '}
+                    <a href="https://github.com/shanedroid32/initiative/issues/new">here</a> to
+                    submit an issue on Github. Or holler at me on{' '}
+                    <a href="https://twitter.com/shanedroid">Twitter.</a>
+                  </p>
+                </div>
               </div>
             </div>
             <div>
@@ -174,11 +180,15 @@ class App extends Component {
               )}
             </div>
             <footer className="flex justify-center mt-8">
-              <a className="text-white hover:text-red no-underline" href="https://github.com/shanedroid32/initiative">
+              <a
+                className="text-white hover:text-red no-underline"
+                href="https://github.com/shanedroid32/initiative">
                 <i className="fab fa-github" /> Github
               </a>
-              <a className="ml-4 text-white hover:text-red no-underline" href="https://twitter.com/shanedroid">
-              <i className="fab fa-twitter"></i> Twitter
+              <a
+                className="ml-4 text-white hover:text-red no-underline"
+                href="https://twitter.com/shanedroid">
+                <i className="fab fa-twitter" /> Twitter
               </a>
             </footer>
           </div>
